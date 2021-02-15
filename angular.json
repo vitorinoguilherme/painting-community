@@ -123,5 +123,13 @@
       }
     }
   },
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": false,
+        "skipTests": true
+      }
+    }
+  },
   "defaultProject": "painting-community"
 }
