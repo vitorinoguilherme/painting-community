@@ -5,7 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { LoggedHomeComponent } from './loggedHome/loggedHome.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: "", pathMatch: "full", redirectTo: "home"},
+  { path: 'home', component: HomeComponent },
   { path: 'loggedHome', component: LoggedHomeComponent }
 ]
 
