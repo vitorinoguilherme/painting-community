@@ -8,6 +8,8 @@ import { HeaderComponent } from './static/header/header.component';
 import { FooterComponent } from './static/footer/footer.component';
 import { LoggedHomeComponent } from './loggedHome/loggedHome.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,7 @@ import { LoggedHomeComponent } from './loggedHome/loggedHome.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
