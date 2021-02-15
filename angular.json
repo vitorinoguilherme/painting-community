@@ -126,7 +126,8 @@
   "schematics": {
     "@schematics/angular": {
       "component": {
-        "spec": false
+        "spec": false,
+        "skipTests": true
       }
     }
   },
