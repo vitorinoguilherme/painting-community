@@ -6,9 +6,31 @@ import { LoggedHomeComponent } from './loggedHome/loggedHome.component';
 
 
 const routes: Routes = [
-  { path: "", pathMatch: "full", redirectTo: "home"},
-  { path: 'home', component: HomeComponent },
-  { path: 'loggedHome', component: LoggedHomeComponent }
+  { 
+    path: "", 
+    children: [ 
+      {
+        path: '', 
+        pathMatch: "full", 
+        redirectTo: "home", 
+      },
+      { 
+        path: 'home', 
+        component: HomeComponent, 
+        data: { 
+            breadcrumb: null
+        },
+        children: [
+          { 
+            path: 'loggedHome', 
+            component: LoggedHomeComponent,
+            data: { 
+              breadcrumb: 'Logged Home'
+            } 
+          }
+        ] },
+    ]
+  }
 ]
 
 @NgModule({

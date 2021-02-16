@@ -1,7 +1,9 @@
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Feed</a></li>
-    </ol>
+<div class="breadcrumb simple">
+    <div *ngFor="let breadcrumbElement of breadcrumbLoadedData; let last = last">
+        {{breadcrumbElement.breadcrumb}}
+        <span class="breadcrumb-separator" *ngIf="!last">
+        </span>
+    </div>
+</div>
 
-</nav>
+
