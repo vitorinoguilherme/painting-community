@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoggedHomeComponent } from './loggedHome/loggedHome.component';
 
+
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home"},
   { path: 'home', component: HomeComponent },
