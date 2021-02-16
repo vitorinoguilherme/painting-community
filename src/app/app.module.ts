@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {
-  MatSidenavModule,
-} from '@angular/material/slider';
+//import { MatSliderModule, MatSlide } from '@angular/material/slider';
+import { MatSidenavModule } from '@angular/material/sidenav'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
+// MatDividerModule,
+// MatListModule,
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -14,7 +18,8 @@ import { HeaderComponent } from './static/header/header.component';
 import { FooterComponent } from './static/footer/footer.component';
 import { LoggedHomeComponent } from './loggedHome/loggedHome.component';
 import { BreadcrumbsComponent } from './static/breadcrumbs/breadcrumbs.component';
-
+import { SidebarComponent } from './static/sidebar/sidebar.component';
+import { ToggleSidebarComponent } from './static/toggle-sidebar/toggle-sidebar.component';
 
 
 @NgModule({
@@ -24,12 +29,19 @@ import { BreadcrumbsComponent } from './static/breadcrumbs/breadcrumbs.component
     HeaderComponent,
     FooterComponent,
     LoggedHomeComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    SidebarComponent,
+    ToggleSidebarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatListModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
