@@ -1,5 +1,21 @@
 <div class="container mt-4">
+  <!-- header -->
   <app-header></app-header>
-  <router-outlet></router-outlet>
+ 
+  <mat-toolbar color="primary">
+     <app-toggle-sidebar></app-toggle-sidebar>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened="true" style="min-width:60px; background: #F3F3F3;" autosize fixedTopGap="56">
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+  
+    <mat-sidenav-content [@onSideNavChange]="sidebarState">
+      <!-- routes will be rendered here -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!-- footer -->
   <app-footer></app-footer>
 </div>
