@@ -5,7 +5,12 @@ import { sidebarAnimation, iconAnimation, labelAnimation } from 'src/app/animati
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.scss'],
+  animations: [
+    sidebarAnimation(),
+    iconAnimation(),
+    labelAnimation(),
+  ]
 })
 
 export class SidebarComponent implements OnInit {
