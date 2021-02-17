@@ -20,6 +20,7 @@ import { LoggedHomeComponent } from './loggedHome/loggedHome.component';
 import { BreadcrumbsComponent } from './static/breadcrumbs/breadcrumbs.component';
 import { SidebarComponent } from './static/sidebar/sidebar.component';
 import { ToggleSidebarComponent } from './static/toggle-sidebar/toggle-sidebar.component';
+import { HomeContentComponent } from './home/home-content/home-content.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { ToggleSidebarComponent } from './static/toggle-sidebar/toggle-sidebar.c
     BreadcrumbsComponent,
     SidebarComponent,
     ToggleSidebarComponent,
+    HomeContentComponent,
   ],
   imports: [
     BrowserModule,
