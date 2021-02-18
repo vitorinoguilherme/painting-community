@@ -33,7 +33,8 @@ import { HomeContentComponent } from './home/home-content/home-content.component
     BreadcrumbsComponent,
     SidebarComponent,
     ToggleSidebarComponent,
-    HomeContentComponent,
+    HomeContentComponent
+    
   ],
   imports: [
     BrowserModule,
