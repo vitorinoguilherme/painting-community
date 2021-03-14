@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
-  imageSrc = 'assets/header/logo1.jpg'
+  imageSrc = 'assets/header/logo.png'
   imageAlt = 'logo'
   page = {
     title: 'Painting Community'

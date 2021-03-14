@@ -1,0 +1,22 @@
+
+// footer social
+  .footer-social{
+    ul{
+      padding-left: 0;
+      li{
+        list-style: none;
+        float: left;
+        padding: 0 10px;
+        &:first-child{
+          padding-left: 0;
+        }
+        a{
+          font-size: 20px;
+          color: #333;
+          &:hover{
+            color: red;
+          }
+        }
+      }
+    }
+  }

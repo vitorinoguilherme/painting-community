@@ -1,11 +1,4 @@
-.nav-item {
-    padding: 2px;
-    margin-left: 7px;
-}
-
 .navbar-brand > h1 {
-    text-align: center;
-    color: #EDF5E1;
-    padding-left: 2em;
-    font-size: 2em;
+    text-align: left;
+    color: Black;
 }

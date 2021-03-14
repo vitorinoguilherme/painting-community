@@ -20,6 +20,8 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    window.scrollTo(0,0);
+
     this.sidebarService.sidebarStateObservable$
     .subscribe((newState: string) => {
       this.sidebarState = newState;
